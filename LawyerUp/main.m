@@ -44,15 +44,12 @@ int main(int argc, const char * argv[]) {
         client2.specialty = CriminalLaw;
         
         
+        [ass1 addClientToClientList:client1 forLawyer:lawyer1];
+        [ass2 addClientToClientList:client2 forLawyer:lawyer1];
         
-        [lawyer1 addClient:client1];
-        [lawyer2 addClient:client2];
-        
-        
-        
-        
-        
-        
+        NSLog(@"%d", [lawyer1 getPayableAmountForClient:client1]);
+        NSLog(@"%d", [lawyer2 getPayableAmountForClient:client2]);
+
         
         
         

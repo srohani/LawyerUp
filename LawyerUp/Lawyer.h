@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Practice.h"
+
+
 #import "Associate.h"
+#import "Practice.h"
 
 
 @interface Lawyer : NSObject

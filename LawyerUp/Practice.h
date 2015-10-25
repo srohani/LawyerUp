@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class Lawyer;
+#import "Lawyer.h"
 
 typedef enum : NSUInteger {
     FamilyLaw,

@@ -8,16 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@class Lawyer;
-@class Client;
 
-@protocol Delegate
+@class Client;
+@class Lawyer;
+
+@protocol Delegate <NSObject>
 -(void)addClientToClientList:(Client *)client forLawyer:(Lawyer *)lawyer;
 -(int)payableAmountForClient:(Client *)client forLawyer:(Lawyer *)lawyer;
 @end
 
 
-@interface Associate : NSObject
+@interface Associate : NSObject <Delegate>
 
 
 

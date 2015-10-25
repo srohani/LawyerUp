@@ -12,4 +12,17 @@
 
 
 
+
+-(void)addClient:(Client *)client {
+    [self addClient:client];
+}
+
+
+
+-(int)getPayableAmountForClient:(Client *)client {
+    return [self.delegate payableAmountForClient:client forLawyer:self];
+}
+
+
+
 @end
