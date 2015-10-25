@@ -47,8 +47,8 @@ int main(int argc, const char * argv[]) {
         [ass1 addClientToClientList:client1 forLawyer:lawyer1];
         [ass2 addClientToClientList:client2 forLawyer:lawyer1];
         
-        NSLog(@"%d", [lawyer1 getPayableAmountForClient:client1]);
-        NSLog(@"%d", [lawyer2 getPayableAmountForClient:client2]);
+        NSLog(@"Client 1 owes %d to lawyer 1", [lawyer1 getPayableAmountForClient:client1]);
+        NSLog(@"Client 2 owes %d to lawyer 2", [lawyer2 getPayableAmountForClient:client2]);
 
         
         
